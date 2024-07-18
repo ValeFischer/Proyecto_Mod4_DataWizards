@@ -59,6 +59,12 @@ Este proyecto os permitirá desarrollar habilidades esenciales en ETL y visualiz
     - Gráfico de Cajas y Bigotes (Box Plot): Mostrar la distribución del lead time de las reservas canceladas y no canceladas.
     - Mapa de Calor (Heatmap): Mostrar la tasa de cancelación por país de origen del cliente.
 
+- **KPIs:**
+
+    - Tasa de Cancelación por Tipo de Hotel: Porcentaje de reservas canceladas en cada tipo de hotel.
+    - Distribución del Lead Time: Mediana y desviación estándar del lead time de reservas canceladas vs. no canceladas.
+    - Tasa de Cancelación por País de Origen: Porcentaje de cancelaciones por país de origen del cliente.
+
 ## Caso de Uso 2: Análisis de Estacionalidad y Patrones Temporales
 
 - **Pregunta:** ¿Existe alguna estacionalidad o patrón temporal en las cancelaciones?
@@ -67,6 +73,11 @@ Este proyecto os permitirá desarrollar habilidades esenciales en ETL y visualiz
     - Gráfico de Líneas: Mostrar la tendencia de cancelaciones a lo largo del año.
     - Gráfico de Barras: Mostrar el número de cancelaciones por semana del año.
     - Calendario de Calor (Heatmap): Visualizar la tasa de cancelación por día del mes.
+
+- **KPIs:**
+    - Tasa de Cancelación Mensual: Porcentaje de reservas canceladas cada mes.
+    - Tasa de Cancelación Semanal: Porcentaje de reservas canceladas por semana del año.
+    - Tasa de Cancelación Diaria: Porcentaje de cancelaciones por día del mes.
 
 ## Caso de Uso 3: Segmentación de Clientes y Canales de Distribución
 
@@ -77,6 +88,11 @@ Este proyecto os permitirá desarrollar habilidades esenciales en ETL y visualiz
     - Gráfico de Barras: Mostrar la tasa de cancelación por canal de distribución.
     - Gráfico de Dispersión (Scatter Plot): Relacionar la tasa de cancelación con la tarifa promedio diaria para diferentes tipos de clientes.
 
+- **KPIs:**
+    - Tasa de Cancelación por Segmento de Mercado: Porcentaje de cancelaciones para cada segmento de mercado.
+    - Tasa de Cancelación por Canal de Distribución: Porcentaje de cancelaciones por cada canal de distribución.
+    - Tasa de Cancelación vs. ADR: Relación entre la tasa de cancelación y la tarifa promedio diaria (ADR) por tipo de cliente.
+
 ## Caso de Uso 4: Análisis de Comportamiento de Clientes y Repetición de Visitas
 
 - **Pregunta:** ¿Qué características del cliente están asociadas con una mayor probabilidad de cancelación?
@@ -85,6 +101,10 @@ Este proyecto os permitirá desarrollar habilidades esenciales en ETL y visualiz
     - Gráfico de Barras: Mostrar el número de cancelaciones para diferentes tipos de clientes.
     - Gráfico de Barras: Mostrar el número de cancelaciones en función de las reservas anteriores no canceladas.
 
+- **KPIs:**
+    - Tasa de Cancelación por Tipo de Cliente: Porcentaje de cancelaciones para diferentes tipos de clientes.
+    - Tasa de Cancelación por Historial de Reservas: Porcentaje de cancelaciones en función del número de reservas anteriores no canceladas.
+
 ## Caso de Uso 5: Optimización de Políticas y Estrategias de Pricing
 
 - **Pregunta:** ¿Cuál es el impacto de las tarifas y políticas de cancelación en las tasas de cancelación?
@@ -92,3 +112,7 @@ Este proyecto os permitirá desarrollar habilidades esenciales en ETL y visualiz
 - **Visualizaciones Sugeridas:**
     - Gráfico de Líneas: Relacionar la tasa de cancelación con la tarifa promedio diaria.
     - Gráfico de Barras: Mostrar el número de cancelaciones para diferentes políticas de cancelación (si se dispone de esta información).
+
+- **KPIs:**
+    - Tasa de Cancelación vs. ADR: Relación entre la tasa de cancelación y la tarifa promedio diaria (ADR).
+    - Tasa de Cancelación por Política de Cancelación: Porcentaje de cancelaciones para diferentes políticas de cancelación (si se dispone de esta información).
