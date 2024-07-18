@@ -1,6 +1,8 @@
-# Proyecto_Mod4_DataWizards
+# Data Insights: ETL y Visualización Impactante en Tableau/Power BI
+
 Módulo 4: Visualización
-1. Resumen
+
+## Introducción
 
 ¡Bienvenidas al emocionante proyecto "Data Insights: ETL y Visualización Impactante en Tableau/Power BI" en nuestro bootcamp de análisis de datos!
 
@@ -15,7 +17,7 @@ Al finalizar, presentareis vuestros informes finales y visualizaciones ante la c
 Este proyecto os permitirá desarrollar habilidades esenciales en ETL y visualización, lo que supone una ventaja competitiva en el campo del análisis de datos y el reporting.
 
 
-# Objetivos de Negocio:
+## Objetivos de Negocio:
 
 1. Reducción de la Tasa de Cancelación: Identificar las causas y patrones de las cancelaciones para implementar medidas que reduzcan la tasa de cancelación.
 
@@ -25,7 +27,7 @@ Este proyecto os permitirá desarrollar habilidades esenciales en ETL y visualiz
 
 4. Incremento de los Ingresos: Reducir la pérdida de ingresos por cancelaciones y aumentar la efectividad de las estrategias de pricing y promociones.
 
-# Preguntas Clave:
+### Preguntas Clave:
 
 1. ¿Cuáles son los principales factores que contribuyen a las cancelaciones de reservas?
 
@@ -47,9 +49,9 @@ Este proyecto os permitirá desarrollar habilidades esenciales en ETL y visualiz
 
     - ¿Qué agentes o compañías tienen mayor proporción de cancelaciones?
 
-# Casos de Uso
+## Casos de Uso
 
-## Caso de Uso 1: Identificación de Factores Clave en las Cancelaciones
+### Caso de Uso 1: Identificación de Factores Clave en las Cancelaciones
 
 - **Pregunta:** ¿Cuáles son los principales factores que contribuyen a las cancelaciones de reservas?
 
@@ -65,7 +67,7 @@ Este proyecto os permitirá desarrollar habilidades esenciales en ETL y visualiz
     - Distribución del Lead Time: Mediana y desviación estándar del lead time de reservas canceladas vs. no canceladas.
     - Tasa de Cancelación por País de Origen: Porcentaje de cancelaciones por país de origen del cliente.
 
-## Caso de Uso 2: Análisis de Estacionalidad y Patrones Temporales
+### Caso de Uso 2: Análisis de Estacionalidad y Patrones Temporales
 
 - **Pregunta:** ¿Existe alguna estacionalidad o patrón temporal en las cancelaciones?
 
@@ -79,7 +81,7 @@ Este proyecto os permitirá desarrollar habilidades esenciales en ETL y visualiz
     - Tasa de Cancelación Semanal: Porcentaje de reservas canceladas por semana del año.
     - Tasa de Cancelación Diaria: Porcentaje de cancelaciones por día del mes.
 
-## Caso de Uso 3: Segmentación de Clientes y Canales de Distribución
+### Caso de Uso 3: Segmentación de Clientes y Canales de Distribución
 
 - **Pregunta:** ¿Qué segmentos de mercado y canales de distribución tienen mayores tasas de cancelación?
 
@@ -93,7 +95,7 @@ Este proyecto os permitirá desarrollar habilidades esenciales en ETL y visualiz
     - Tasa de Cancelación por Canal de Distribución: Porcentaje de cancelaciones por cada canal de distribución.
     - Tasa de Cancelación vs. ADR: Relación entre la tasa de cancelación y la tarifa promedio diaria (ADR) por tipo de cliente.
 
-## Caso de Uso 4: Análisis de Comportamiento de Clientes y Repetición de Visitas
+### Caso de Uso 4: Análisis de Comportamiento de Clientes y Repetición de Visitas
 
 - **Pregunta:** ¿Qué características del cliente están asociadas con una mayor probabilidad de cancelación?
 
@@ -105,7 +107,7 @@ Este proyecto os permitirá desarrollar habilidades esenciales en ETL y visualiz
     - Tasa de Cancelación por Tipo de Cliente: Porcentaje de cancelaciones para diferentes tipos de clientes.
     - Tasa de Cancelación por Historial de Reservas: Porcentaje de cancelaciones en función del número de reservas anteriores no canceladas.
 
-## Caso de Uso 5: Optimización de Políticas y Estrategias de Pricing
+### Caso de Uso 5: Optimización de Políticas y Estrategias de Pricing
 
 - **Pregunta:** ¿Cuál es el impacto de las tarifas y políticas de cancelación en las tasas de cancelación?
 
