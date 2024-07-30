@@ -30,8 +30,14 @@ df_imputed = sup.convert_to_datetime(df_imputed,'reservation_status_date')
 #Creacion de columna tipo datetime con mes y anio
 df_imputed = sup.create_datetime_column(df_imputed, 'arrival_date_year', 'arrival_date_month', 'arrival_date_year_month')
 #%%
+#Agregar columna ADR_Nivel a partir de columna [adr]
+df_imputed = sup.categorize_adr_column(df_imputed)
+
+#%%
 #Exportacion CSV
 print("_" * 50,"\n")
 ruta = "../data/output_data/reservas_limpio_final.csv"
 df_imputed.to_csv(ruta,index=False)
 print(f"CSV exportado correctamente en {ruta}.")
+
+# %%

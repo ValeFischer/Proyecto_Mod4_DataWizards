@@ -178,3 +178,31 @@ def create_datetime_column(df, year_col, month_col, new_col):
     # Verificar el tipo de la nueva columna
     print(f"Se ha creado una nueva columna '{new_col}' con el año '{year_col}' y el mes '{month_col}' de tipo: {df[new_col].dtype}")
     return df
+
+#%%
+#Funcion para crear columna ADR por niveles
+def categorize_adr_column(df):
+    # Calcular la media y la desviación estándar de ADR, ignorando los valores nulos
+    adr_mean = df['adr'].mean()
+    adr_std = df['adr'].std()
+
+    # Definir umbrales para las categorías
+    low_threshold = adr_mean - adr_std
+    high_threshold = adr_mean + adr_std
+
+    # Función para categorizar ADR
+    def categorize_adr(adr):
+        if pd.isna(adr):
+            return 'Desconocido'
+        elif adr < low_threshold:
+            return 'Bajo'
+        elif adr > high_threshold:
+            return 'Alto'
+        else:
+            return 'Medio'
+
+    # Crear una nueva columna con los niveles
+    df['ADR_Nivel'] = df['adr'].apply(categorize_adr)
+    
+    return df
+# %%
