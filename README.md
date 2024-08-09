@@ -1,120 +1,94 @@
-# Data Insights: ETL y Visualización Impactante en Tableau/Power BI
+![CancelInsight: Análisis y Optimización de Cancelaciones de Reservas de Hoteles](https://github.com/ValeFischer/Proyecto_Mod4_DataWizards/tree/main/assets/header-cancelinsight.jpg)
 
-Módulo 4: Visualización
+# CancelInsight: Análisis y Optimización de Cancelaciones de Reservas de Hotel
+*Equipo desarrollo: [Marta García](https://github.com/martam3t3oro), [Valentina Fischer](https://github.com/ValeFischer), [Franca Tortarolo](https://github.com/FrancaTortaroloo) y [Elena Águila](https://github.com/eaguilag)*
 
 ## Introducción
 
-¡Bienvenidas al emocionante proyecto "Data Insights: ETL y Visualización Impactante en Tableau/Power BI" en nuestro bootcamp de análisis de datos!
+**CancelInsights** es un análisis de las reservas de un hotel, cuyo objetivo es identificar patrones que puedan ayudar a reducir las tasas de cancelación.
 
-En este desafío, nos sumergiremos en el apasionante mundo del reporting de datos, donde adquirireis las habilidades clave para transformar datos crudos en información significativa y visualmente impactante.
+La gerencia del hotel nos contactó con el objetivo de incrementar la ocupación del hotel y optimizar la gestión de las reservas. Para ello, hemos elaborado un análisis del conjunto de datos proporcionado por el cliente que contiene información detallada sobre las reservas del hotel. Estos datos nos permiten identificar patrones que nos pueden ayudar a reducir la tasa de cancelación. Para ello hemos hecho tres casos de estudio centrándonos en el estado de la reserva (si se ha cancelado o no) en relación con:
 
-Comenzaremos explorando/limpiando un conjunto de datos proporcionado, identificando patrones y determinando las mejores prácticas para la limpieza y transformación de datos. A través de Pandas, abordaremos problemas comunes como datos faltantes o inconsistentes (es decir, afianzaremos todos los conocimientos adquiridos durante el Módulo 3).
+1. Estacionalidad y patrones temporales
 
-Además, nos adentraremos en el poderoso Tableau o Power BI, donde crearemos visualizaciones interactivas y atractivas que contarán historias con datos. Gracias a estas herramientas, podréis comunicar de manera efectiva y persuasiva los insights obtenidos durante el análisis y limpieza previo.
+2. Factores operativos o detalles de la reserva
 
-Al finalizar, presentareis vuestros informes finales y visualizaciones ante la clase, demostrando vuestra habilidad para comunicar hallazgos clave y conclusiones a través de datos bien presentados.
-
-Este proyecto os permitirá desarrollar habilidades esenciales en ETL y visualización, lo que supone una ventaja competitiva en el campo del análisis de datos y el reporting.
+3. Características demográficas del huésped
 
 
 ## Objetivos de Negocio:
 
 1. Reducción de la Tasa de Cancelación: Identificar las causas y patrones de las cancelaciones para implementar medidas que reduzcan la tasa de cancelación.
 
-2. Mejora de la Satisfacción del Cliente: Asegurar que las reservas no canceladas se traduzcan en estancias satisfactorias y repetidas.
+2. Optimización de la Capacidad Hotelera: Aumentar la ocupación mediante la reducción de las cancelaciones y la maximización del uso de las habitaciones disponibles.
 
-3. Optimización de la Capacidad Hotelera: Aumentar la ocupación mediante la reducción de las cancelaciones y la maximización del uso de las habitaciones disponibles.
+3. Incremento de los Ingresos: Reducir la pérdida de ingresos por cancelaciones y aumentar la efectividad de las estrategias de pricing y promociones.
 
-4. Incremento de los Ingresos: Reducir la pérdida de ingresos por cancelaciones y aumentar la efectividad de las estrategias de pricing y promociones.
+4. Mejora de la Satisfacción del Cliente: Asegurar que las reservas no canceladas se traduzcan en estancias satisfactorias y repetidas.
 
-### Preguntas Clave:
-
-1. ¿Cuáles son los principales factores que contribuyen a las cancelaciones de reservas?
-
-    - ¿Cómo influyen variables como el tipo de hotel, lead time, país de origen, tipo de cliente, y segmento de mercado en las cancelaciones?
-
-2. ¿Existe alguna estacionalidad o patrón temporal en las cancelaciones?
-
-    - ¿Qué meses o semanas del año tienen mayores tasas de cancelación?
-
-3. ¿Qué características del cliente o de la reserva están asociadas con una mayor probabilidad de cancelación?
-
-    - ¿Los clientes con reservas más largas o con más solicitudes especiales tienen mayor probabilidad de cancelar?
-
-4. ¿Cuál es el impacto de las cancelaciones en la ocupación y los ingresos del hotel?
-
-    - ¿Cómo afectan las cancelaciones a las tarifas promedio diarias y a la utilización de habitaciones?
-
-5. ¿Qué canales de distribución y segmentos de mercado tienen mayores tasas de cancelación?
-
-    - ¿Qué agentes o compañías tienen mayor proporción de cancelaciones?
 
 ## Casos de Uso
 
-### Caso de Uso 1: Identificación de Factores Clave en las Cancelaciones
+### Caso de Estudio 1: Análisis de Estacionalidad y Patrones Temporales
 
-- **Pregunta:** ¿Cuáles son los principales factores que contribuyen a las cancelaciones de reservas?
+- **Objetivo:** Analizar cómo varían las cancelaciones según factores temporales de la reserva.
 
-- **Visualizaciones Sugeridas:**
-
-    - Gráfico de Barras Apiladas: Mostrar el número de reservas canceladas y no canceladas para cada tipo de hotel.
-    - Gráfico de Cajas y Bigotes (Box Plot): Mostrar la distribución del lead time de las reservas canceladas y no canceladas.
-    - Mapa de Calor (Heatmap): Mostrar la tasa de cancelación por país de origen del cliente.
-
-- **KPIs:**
-
-    - Tasa de Cancelación por Tipo de Hotel: Porcentaje de reservas canceladas en cada tipo de hotel.
-    - Distribución del Lead Time: Mediana y desviación estándar del lead time de reservas canceladas vs. no canceladas.
-    - Tasa de Cancelación por País de Origen: Porcentaje de cancelaciones por país de origen del cliente.
-
-### Caso de Uso 2: Análisis de Estacionalidad y Patrones Temporales
-
-- **Pregunta:** ¿Existe alguna estacionalidad o patrón temporal en las cancelaciones?
-
-- **Visualizaciones Sugeridas:**
-    - Gráfico de Líneas: Mostrar la tendencia de cancelaciones a lo largo del año.
-    - Gráfico de Barras: Mostrar el número de cancelaciones por semana del año.
-    - Calendario de Calor (Heatmap): Visualizar la tasa de cancelación por día del mes.
+- **Preguntas:**
+    - ¿Existe alguna estacionalidad o patrón temporal en las cancelaciones?
+    - ¿Las cancelaciones son más frecuentes en ciertos meses o estaciones?
+    - ¿Hay una diferencia significativa en las tasas de cancelación entre reservas para el fin de semana y días laborables?
 
 - **KPIs:**
+    - Tasa de Cancelación Anual: Porcentaje de reservas canceladas por año.
+    - Tasa de Cancelación por Temporada: Porcentaje de reservas canceladas por estación del año.
     - Tasa de Cancelación Mensual: Porcentaje de reservas canceladas cada mes.
-    - Tasa de Cancelación Semanal: Porcentaje de reservas canceladas por semana del año.
-    - Tasa de Cancelación Diaria: Porcentaje de cancelaciones por día del mes.
+    - Tasa de Cancelación por Tipo de Día: Porcentaje de cancelaciones por tipo de día (día entre semana o fin de semana).
 
-### Caso de Uso 3: Segmentación de Clientes y Canales de Distribución
+### Caso de Estudio 2: Análisis de Detalles de Reserva
 
-- **Pregunta:** ¿Qué segmentos de mercado y canales de distribución tienen mayores tasas de cancelación?
+- **Objetivo:** Evaluar si hay factores en relación a la reserva que influyen en la probabilidad de cancelación.
 
-- **Visualizaciones Sugeridas:**
-    - Gráfico de Barras: Mostrar la tasa de cancelación para cada segmento de mercado.
-    - Gráfico de Barras: Mostrar la tasa de cancelación por canal de distribución.
-    - Gráfico de Dispersión (Scatter Plot): Relacionar la tasa de cancelación con la tarifa promedio diaria para diferentes tipos de clientes.
+- **Preguntas:**
+    - ¿Qué detalles de la reserva están asociadas con una mayor probabilidad de cancelación?
+    - ¿Qué impacto tiene el tiempo de anticipación de la reserva (lead time) en la probabilidad de cancelación?
+	- ¿Hay una relación entre el tipo de habitación, el ADR (Average Daily Rate), y las cancelaciones?
+	- ¿El historial de cancelaciones previas o cambios en la reserva incrementan la probabilidad de una nueva cancelación?
 
 - **KPIs:**
-    - Tasa de Cancelación por Segmento de Mercado: Porcentaje de cancelaciones para cada segmento de mercado.
-    - Tasa de Cancelación por Canal de Distribución: Porcentaje de cancelaciones por cada canal de distribución.
+    - Tasa de Cancelación por Cambios de Reservas: Porcentaje de cancelaciones en función del número de cambios de reserva realizados.
+    - Tasa de Cancelación por Historial de Reservas: Porcentaje de cancelaciones en función del número de reservas anteriores no canceladas.
     - Tasa de Cancelación vs. ADR: Relación entre la tasa de cancelación y la tarifa promedio diaria (ADR) por tipo de cliente.
+    - Tasa de Cancelación por Tipo de Habitación: Porcentaje de cancelaciones en función del tipo de habitación asignada al cliente.
+    - Distribución del Lead Time: Días transcurridos desde las reservas canceladas vs. no canceladas.
 
-### Caso de Uso 4: Análisis de Comportamiento de Clientes y Repetición de Visitas
+### Caso de Estudio 3: Análisis de Comportamiento de Clientes y Repetición de Visitas
 
-- **Pregunta:** ¿Qué características del cliente están asociadas con una mayor probabilidad de cancelación?
+- **Objetivo:** Identificar perfiles de clientes que tienden a cancelar con mayor frecuencia.
 
-- **Visualizaciones Sugeridas:**
-    - Gráfico de Barras: Mostrar el número de cancelaciones para diferentes tipos de clientes.
-    - Gráfico de Barras: Mostrar el número de cancelaciones en función de las reservas anteriores no canceladas.
+- **Preguntas:**
+    - ¿Qué características del cliente están asociadas con una mayor probabilidad de cancelación?
+    - ¿Existen ciertos países o segmentos de clientes (tipos de clientes) con mayores tasas de cancelación?
+	- ¿Los clientes con necesidades especiales tienden a cancelar más?
+    - ¿Cómo influyen los datos demográficos como la presencia de niños o bebés en la probabilidad de cancelación?
 
 - **KPIs:**
     - Tasa de Cancelación por Tipo de Cliente: Porcentaje de cancelaciones para diferentes tipos de clientes.
-    - Tasa de Cancelación por Historial de Reservas: Porcentaje de cancelaciones en función del número de reservas anteriores no canceladas.
+    - Tasa de Cancelación por País de Origen: Porcentaje de cancelaciones por país de origen del cliente.
+    - Tasa de Cancelación por Necesidades Especiales: Porcentaje de cancelaciones por necesidades especiales.
+    - Tasa de Cancelación por Presencia de Niños o Bebés: Porcentaje de cancelaciones en función de si hay presencia de niños o bebés.
 
-### Caso de Uso 5: Optimización de Políticas y Estrategias de Pricing
+## Estrategias de Optimización y Mejora en las Reservas
 
-- **Pregunta:** ¿Cuál es el impacto de las tarifas y políticas de cancelación en las tasas de cancelación?
+Al comprender más profundamente los factores que pueden causar cancelaciones, podemos diseñar estrategias que no solo las reduzcan, sino que también mejoren la ocupación y la satisfacción general los huéspedes.
 
-- **Visualizaciones Sugeridas:**
-    - Gráfico de Líneas: Relacionar la tasa de cancelación con la tarifa promedio diaria.
-    - Gráfico de Barras: Mostrar el número de cancelaciones para diferentes políticas de cancelación (si se dispone de esta información).
+1. Temporalidad:
+    - Público objetivo: Gerencia del Hotel, responsable de la toma de decisiones estratégicas y operativas.
+    - Medidas: Ajustar las políticas de reserva según la temporada para reducir las cancelaciones y optimizar la ocupación, minimizando así la pérdida de ingresos.
 
-- **KPIs:**
-    - Tasa de Cancelación vs. ADR: Relación entre la tasa de cancelación y la tarifa promedio diaria (ADR).
-    - Tasa de Cancelación por Política de Cancelación: Porcentaje de cancelaciones para diferentes políticas de cancelación (si se dispone de esta información).
+2. Detalles de Reserva:
+    - Público objetivo: Departamento de Reservas, encargado de gestionar las reservas y las relaciones con los clientes.
+    - Medidas: Revisar tarifas y condiciones de cambio o cancelación de la reserva para mejorar la relación con los clientes, así como mejorar la asignación de habitaciones.
+
+3. Detalles de Cliente:
+    - Público objetivo: Equipo de Marketing, responsable de atraer y retener clientes.
+    - Medidas: Desarrollar estrategias de retención basadas en segmentos de clientes propensos a cancelar, como mejorar la dirección u orientación de las campañas.
