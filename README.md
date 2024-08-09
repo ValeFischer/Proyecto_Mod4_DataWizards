@@ -1,4 +1,4 @@
-![CancelInsight: Análisis y Optimización de Cancelaciones de Reservas de Hoteles](https://github.com/ValeFischer/Proyecto_Mod4_DataWizards/tree/main/assets/header-cancelinsight.jpg)
+![CancelInsight: Análisis y Optimización de Cancelaciones de Reservas de Hoteles](https://github.com/ValeFischer/Proyecto_Mod4_DataWizards/blob/main/assets/header-cancelinsight.jpg)
 
 # CancelInsight: Análisis y Optimización de Cancelaciones de Reservas de Hotel
 *Equipo desarrollo: [Marta García](https://github.com/martam3t3oro), [Valentina Fischer](https://github.com/ValeFischer), [Franca Tortarolo](https://github.com/FrancaTortaroloo) y [Elena Águila](https://github.com/eaguilag)*
@@ -77,7 +77,7 @@ La gerencia del hotel nos contactó con el objetivo de incrementar la ocupación
     - Tasa de Cancelación por Necesidades Especiales: Porcentaje de cancelaciones por necesidades especiales.
     - Tasa de Cancelación por Presencia de Niños o Bebés: Porcentaje de cancelaciones en función de si hay presencia de niños o bebés.
 
-## Estrategias de Optimización y Mejora en las Reservas
+## Estrategias de Optimización y Mejora de las Reservas
 
 Al comprender más profundamente los factores que pueden causar cancelaciones, podemos diseñar estrategias que no solo las reduzcan, sino que también mejoren la ocupación y la satisfacción general los huéspedes.
 
